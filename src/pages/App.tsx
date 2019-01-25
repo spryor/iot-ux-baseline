@@ -6,6 +6,7 @@ import { Navigation } from '@microsoft/azure-iot-ux-fluent-controls/lib/componen
 import { Masthead } from '@microsoft/azure-iot-ux-fluent-controls/lib/components/Masthead';
 import { Shell } from '@microsoft/azure-iot-ux-fluent-controls/lib/components/Shell';
 import { I18n } from '../i18n';
+import { Demo } from './Demo';
 
 import './App.fonts.scss';
 const cx = classnames.bind(require('./App.module.scss'));
@@ -40,6 +41,7 @@ export class App extends React.Component<Properties, State>  {
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route path='/about' component={About} />
+                <Route path='/demo' component={Demo} />
               </Switch>
             </div>
           </div>
@@ -63,6 +65,13 @@ export class App extends React.Component<Properties, State>  {
         icon: 'icon icon-multitask',
         label: loc('navigation.about'),
         title: loc('navigation.about')
+      },
+      {
+        key: 'demo',
+        to: '/demo',
+        icon: 'icon icon-multitask',
+        label: 'Demo',
+        title: 'Demo',
       }
     ];
 

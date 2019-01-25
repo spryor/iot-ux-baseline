@@ -1,0 +1,35 @@
+.container {
+  display: block;
+  padding: 0 40px;
+}
+
+.headerRow {
+  display: flex;
+  flex-flow: row nowrap;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.headerCell {
+  display: block;
+  // TODO: Make Dynamic
+  padding: 8px 0;
+  text-align: left;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  border-bottom: 1px solid #3d3d3d;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, .05);
+  }
+}
+
+.cell {
+  display: block;
+  // TODO: Make Dynamic
+  padding: 8px 0;
+  text-align: left;
+}
